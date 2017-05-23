@@ -8,7 +8,15 @@
 import scrapy
 
 
-class VscrapysItem(scrapy.Item):
+class YeskyItem(scrapy.Item):
+    domain = 'yesky.com'
+    title = scrapy.Field()
+    description = scrapy.Field()
+    keywords = scrapy.Field()
+    url = scrapy.Field()
+    video_url = scrapy.Field()
+    author = scrapy.Field()
+
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    # pass
